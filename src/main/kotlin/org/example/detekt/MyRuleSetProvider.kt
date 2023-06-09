@@ -1,5 +1,6 @@
 package org.example.detekt
 
+import InternetInTheLoopRule
 import io.gitlab.arturbosch.detekt.api.Config
 import io.gitlab.arturbosch.detekt.api.RuleSet
 import io.gitlab.arturbosch.detekt.api.RuleSetProvider
@@ -12,6 +13,15 @@ class MyRuleSetProvider : RuleSetProvider {
             ruleSetId,
             listOf(
                 MyRule(config),
+                SaveModeAwarenessRule(config),
+                MediaLeakRule(config),
+                EverlastingServiceRule(config),
+                InternetInTheLoopRule(config),
+                UncompressedDataTransmission(config),
+                KeepScreenOnRule(config),
+                KeepCpuOnRule(config),
+                DurableWakeLockRule(config),
+
             ),
         )
     }

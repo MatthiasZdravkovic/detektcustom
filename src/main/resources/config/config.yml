@@ -1,3 +1,19 @@
 MyRuleSet:
   MyRule:
     active: true
+  SaveModeAwarenessRule:
+    active: true
+  MediaLeakRule:
+    active: true
+  KeepScreenOnRule:
+    active: true
+  KeepCpuOnRule:
+    active: true
+  InternetInTheLoopRule:
+    active: true
+  IgnoreBatteryOptimizationsRule:
+    active: true
+  EverlastingServiceRule:
+    active: true
+  DurableWakeLockRule:
+    active: true
