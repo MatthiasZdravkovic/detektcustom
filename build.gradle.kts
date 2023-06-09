@@ -1,10 +1,11 @@
 plugins {
     kotlin("jvm") version "1.8.22"
     `maven-publish`
+    id("maven-publish")
 }
 
 group = "com.github.MatthiasZdravkovic"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 dependencies {
     compileOnly("io.gitlab.arturbosch.detekt:detekt-api:1.23.0")
